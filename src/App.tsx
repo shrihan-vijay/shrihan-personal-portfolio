@@ -58,6 +58,7 @@ const projects = [
     tags: ["React", "TypeScript", "FastAPI", "Supabase", "LangGraph", "RAG", "ChromaDB", "Groq"],
     github: "https://github.com/shrihan-vijay/hire-ready",
     demo: "https://hire-ready-sable-pi.vercel.app",
+    demoGif: "/hireready-demo.gif",
     featured: true,
   },
   {
@@ -628,6 +629,13 @@ function Projects() {
             <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
               {featured.description}
             </p>
+            {featured.demoGif && (
+              <img
+                src={featured.demoGif}
+                alt={`${featured.name} demo walkthrough`}
+                className="mt-5 w-full max-w-2xl rounded-lg border border-slate-200 shadow-sm"
+              />
+            )}
             <div className="mt-5 flex flex-wrap gap-2">
               {featured.tags.map((tag) => (
                 <span
@@ -658,7 +666,7 @@ function Projects() {
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 rounded-md bg-orange-600 px-4 py-2 text-sm font-semibold text-white transition-all duration-150 hover:bg-orange-700"
                 >
-                  Live Demo
+                  Try It
                   <span className="transition-transform duration-150 group-hover:translate-x-0.5">→</span>
                 </a>
               )}
