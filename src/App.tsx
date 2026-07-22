@@ -54,9 +54,10 @@ const projects = [
     name: "HireReady",
     period: "June 2026 – Present",
     description:
-      "Full-stack AI resume copilot that automates resume evaluation, ATS scoring, user authentication, and personalized career workflows. Features a Retrieval-Augmented Generation pipeline using sentence-transformers, ChromaDB, and Groq (LLaMA 3.3 70B) to semantically match resumes against job descriptions and generate actionable feedback.",
-    tags: ["React", "TypeScript", "FastAPI", "Supabase", "PostgreSQL", "RAG", "ChromaDB", "Groq"],
+      "Full-stack AI career copilot spanning three multi-agent architectures — a tool-calling adaptive mock interviewer, a concurrent fan-out job ranker, and a sequential LangGraph research-to-strategy pipeline — plus a RAG-grounded ATS scoring engine (sentence-transformers, ChromaDB, Groq LLaMA 3.3 70B) and a full application tracking system with resume-aware interview coaching.",
+    tags: ["React", "TypeScript", "FastAPI", "Supabase", "LangGraph", "RAG", "ChromaDB", "Groq"],
     github: "https://github.com/shrihan-vijay/hire-ready",
+    demo: "https://hire-ready-sable-pi.vercel.app",
     featured: true,
   },
   {
@@ -637,18 +638,31 @@ function Projects() {
                 </span>
               ))}
             </div>
-            {featured.github && (
-              <a
-                href={featured.github}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-6 inline-flex items-center gap-2 rounded-md border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 transition-all duration-150 hover:border-slate-950 hover:text-slate-950"
-              >
-                <GitHubArrow />
-                View on GitHub
-                <span className="transition-transform duration-150 group-hover:translate-x-0.5">→</span>
-              </a>
-            )}
+            <div className="mt-6 flex flex-wrap gap-3">
+              {featured.github && (
+                <a
+                  href={featured.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 transition-all duration-150 hover:border-slate-950 hover:text-slate-950"
+                >
+                  <GitHubArrow />
+                  View on GitHub
+                  <span className="transition-transform duration-150 group-hover:translate-x-0.5">→</span>
+                </a>
+              )}
+              {featured.demo && (
+                <a
+                  href={featured.demo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 rounded-md bg-orange-600 px-4 py-2 text-sm font-semibold text-white transition-all duration-150 hover:bg-orange-700"
+                >
+                  Live Demo
+                  <span className="transition-transform duration-150 group-hover:translate-x-0.5">→</span>
+                </a>
+              )}
+            </div>
           </div>
         </article>
       </div>
