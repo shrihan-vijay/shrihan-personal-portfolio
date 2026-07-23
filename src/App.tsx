@@ -12,37 +12,37 @@ const navItems = ["About", "Experience", "Projects", "Skills", "Contact"];
 const experiences = [
   {
     company: "Idea Nirvana",
-    role: "AI/ML Engineer Intern",
-    period: "May 2026 – Present",
+    role: "AI Engineer Intern",
+    period: "June 2026 – Present",
     location: "Ashburn, VA",
     logo: "/logo-idea-nirvana.png",
-    skills: ["React", "FastAPI", "PostgreSQL", "Microsoft SharePoint", "LLMs", "RAG", "MCP", "Prompt Engineering", "Vector Search"],
+    skills: ["React", "FastAPI", "PostgreSQL", "Microsoft SharePoint", "LangGraph", "RAG", "MCP", "Vector Search"],
     bullets: [
-      "Designing and developing an AI-powered Learning Management System using React, FastAPI, PostgreSQL, and Microsoft SharePoint to enable enterprise AI adoption, employee onboarding, and role-based learning",
-      "Building multi-agent AI workflows leveraging LLMs, Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP), prompt engineering, and vector search to deliver personalized learning experiences and secure enterprise AI solutions",
+      "Architected an enterprise AI-powered Learning Management System (React, FastAPI, PostgreSQL, Microsoft SharePoint) with 5+ LangGraph agents and 10+ workflow states, leveraging RAG, MCP, and vector search for personalized tutoring and onboarding",
+      "Built multi-agent workflows that retrieve, reason over, and act upon 100+ enterprise documents via SharePoint MCP and PostgreSQL-backed context, producing grounded responses and adaptive assessments",
     ],
   },
   {
     company: "GuidePoint Security",
-    role: "Cybersecurity Intern",
+    role: "Cybersecurity Engineer Intern",
     period: "May 2026 – Present",
     location: "Remote",
     logo: "/logo-guidepoint.png",
-    skills: ["Kali Linux", "WireGuard", "Active Directory", "Windows Server", "Splunk", "Ludus", "SOC Operations", "Network Monitoring"],
+    skills: ["Terraform", "Ansible", "Ludus", "WireGuard", "Kali Linux", "Splunk", "SOC Operations", "Network Monitoring"],
     bullets: [
-      "Deploying and administering enterprise security lab environments using Ludus, WireGuard, Active Directory, Windows Server, and Kali Linux to simulate real-world attack and defense scenarios",
-      "Supporting security operations workflows involving network monitoring, system administration, threat detection, and security infrastructure management within a SOC environment",
+      "Deployed 5 enterprise security lab environments, provisioning infrastructure with Terraform and Ansible and simulating real-world attacks via Ludus, WireGuard, and Kali Linux",
+      "Administered SOC operations across a 10–25 endpoint environment, monitoring network traffic in Splunk, hardening systems, and running vulnerability assessments for threat detection and infrastructure management",
     ],
   },
   {
     company: "U.S. Department of the Treasury",
     role: "Software Engineer Intern",
-    period: "May 2024 – Aug. 2024",
+    period: "May 2023 – Aug. 2023",
     location: "Washington, D.C.",
     logo: "/logo-treasury.png",
-    skills: ["Python", "SQL", "scikit-learn", "JavaScript", "REST APIs", "Machine Learning", "TF-IDF Vectorization"],
+    skills: ["Python", "pandas", "SQL", "scikit-learn", "JavaScript", "REST APIs", "Machine Learning", "TF-IDF Vectorization"],
     bullets: [
-      "Developed Python and SQL workflow automation systems that reduced multi-bureau approval turnaround time by 20%",
+      "Developed Python (pandas) and SQL workflow automation systems that reduced multi-bureau approval turnaround time by 20%",
       "Improved document classification accuracy by 30% by training machine learning pipelines using scikit-learn, TF-IDF vectorization, and logistic regression models",
       "Built user-facing analytics dashboards and REST API integrations using JavaScript and SQL databases to support operational tracking tools for 40+ users",
     ],
@@ -52,27 +52,36 @@ const experiences = [
 const projects = [
   {
     name: "HireReady",
-    period: "June 2026 – Present",
+    period: "Feb. 2026 – July 2026",
     description:
-      "Full-stack AI career copilot spanning three multi-agent architectures — a tool-calling adaptive mock interviewer, a concurrent fan-out job ranker, and a sequential LangGraph research-to-strategy pipeline — plus a RAG-grounded ATS scoring engine (sentence-transformers, ChromaDB, Groq LLaMA 3.3 70B) and a full application tracking system with resume-aware interview coaching.",
-    tags: ["React", "TypeScript", "FastAPI", "Supabase", "LangGraph", "RAG", "ChromaDB", "Groq"],
+      "Full-stack AI career copilot (React, FastAPI, Supabase) integrating Groq LLM and Whisper inference behind JWT-authenticated REST/SSE APIs to deliver resume scoring and voice-transcribed interview coaching. Architected three agentic patterns, a Groq tool-calling adaptive interviewer, a concurrent fan-out job ranker, and a sequential LangGraph pipeline, integrating GitHub's MCP server and cutting job-scoring latency up to 5x. Also engineered a RAG pipeline (MiniLM embeddings, ChromaDB vector search) to ground ATS scoring and skill-gap analysis in resume-specific context, plus a full application tracking system.",
+    tags: ["React", "TypeScript", "FastAPI", "Supabase", "LangGraph", "RAG", "ChromaDB", "Groq", "Whisper"],
     github: "https://github.com/shrihan-vijay/hire-ready",
     demo: "https://hire-ready-sable-pi.vercel.app",
     demoGif: "/hireready-demo.gif",
     featured: true,
   },
   {
-    name: "Audia",
-    period: "Mar. 2026 – Present",
+    name: "CodeCartographer",
+    period: "May 2026 – Present",
     description:
-      "Full-stack social music discovery platform built with React, Node.js, Express, Firebase, and Spotify APIs. Built RESTful backend services, integrated third-party APIs, and managed user data while collaborating within an Agile software development team.",
+      "Static-analysis and semantic-search tool that constructs symbol/call graphs across Python and TypeScript repos (tree-sitter, recursive-CTE queries in Postgres) and AST-aware semantic chunks (pgvector embeddings), indexing 200+ symbols and 500+ call/import/contains edges per repo in under 2 seconds. Serves cited natural-language Q&A through an agentic retrieval layer (Ollama/Llama 3.1, FastAPI) that autonomously chains graph and vector-search tool calls, grounding every answer in 180+ indexed chunks with symbol-level citations, all running locally with no paid API. Also ships a Chrome side-panel extension as a second client on the same FastAPI backend.",
+    tags: ["Python", "TypeScript", "tree-sitter", "PostgreSQL", "pgvector", "FastAPI", "Ollama"],
+    github: "https://github.com/shrihan-vijay/codecartographer",
+    featured: false,
+  },
+  {
+    name: "Audia",
+    period: "Nov. 2025 – May 2026",
+    description:
+      "Full-stack social music discovery platform (React, Node.js, Express, Firebase) with 29 RESTful endpoints across 4 services for discovery, forums, and messaging. Integrated Spotify OAuth and the Spotify Web API for personalized discovery features, backed by 28 automated tests ensuring reliability across core services.",
     tags: ["React", "Node.js", "Express", "Firebase", "Spotify API", "REST APIs"],
     github: "https://github.com/shrihan-vijay/audia",
     featured: false,
   },
   {
     name: "Deep Learning Pneumonia Detection",
-    period: "June 2025 – Aug. 2025",
+    period: "June 2023 – July 2023",
     description:
       "Computer vision research pipeline using CNNs, TensorFlow, and Keras to analyze 1,000+ chest X-ray images with 95% diagnostic accuracy. Applied transfer learning across 200+ pretrained models to improve reliability, generalization, and classification performance.",
     tags: ["Python", "TensorFlow", "Keras", "CNNs", "Transfer Learning", "Computer Vision"],
@@ -95,7 +104,11 @@ const skills: SkillGroup[] = [
       {
         name: "Python",
         icon: `${DI}/python/python-original.svg`,
-        usedIn: [{ label: "U.S. Treasury" }, { label: "Pneumonia Detection" }],
+        usedIn: [
+          { label: "U.S. Treasury" },
+          { label: "Pneumonia Detection" },
+          { label: "CodeCartographer", href: "https://github.com/shrihan-vijay/codecartographer" },
+        ],
       },
       {
         name: "Java",
@@ -120,6 +133,7 @@ const skills: SkillGroup[] = [
         usedIn: [
           { label: "HireReady", href: "https://github.com/shrihan-vijay/hire-ready" },
           { label: "Audia", href: "https://github.com/shrihan-vijay/audia" },
+          { label: "CodeCartographer", href: "https://github.com/shrihan-vijay/codecartographer" },
         ],
       },
     ],
@@ -142,13 +156,20 @@ const skills: SkillGroup[] = [
         usedIn: [
           { label: "Idea Nirvana" },
           { label: "HireReady", href: "https://github.com/shrihan-vijay/hire-ready" },
+          { label: "CodeCartographer", href: "https://github.com/shrihan-vijay/codecartographer" },
         ],
+      },
+      {
+        name: "Ollama",
+        icon: `${SI}/ollama`,
+        usedIn: [{ label: "CodeCartographer", href: "https://github.com/shrihan-vijay/codecartographer" }],
       },
       {
         name: "Embeddings",
         usedIn: [
           { label: "Idea Nirvana" },
           { label: "HireReady", href: "https://github.com/shrihan-vijay/hire-ready" },
+          { label: "CodeCartographer", href: "https://github.com/shrihan-vijay/codecartographer" },
         ],
       },
       {
@@ -156,6 +177,7 @@ const skills: SkillGroup[] = [
         usedIn: [
           { label: "Idea Nirvana" },
           { label: "HireReady", href: "https://github.com/shrihan-vijay/hire-ready" },
+          { label: "CodeCartographer", href: "https://github.com/shrihan-vijay/codecartographer" },
         ],
       },
       {
@@ -175,7 +197,10 @@ const skills: SkillGroup[] = [
       },
       {
         name: "AI Agents",
-        usedIn: [{ label: "Idea Nirvana" }],
+        usedIn: [
+          { label: "Idea Nirvana" },
+          { label: "CodeCartographer", href: "https://github.com/shrihan-vijay/codecartographer" },
+        ],
       },
       {
         name: "TensorFlow",
@@ -211,6 +236,7 @@ const skills: SkillGroup[] = [
         usedIn: [
           { label: "HireReady", href: "https://github.com/shrihan-vijay/hire-ready" },
           { label: "Idea Nirvana" },
+          { label: "CodeCartographer", href: "https://github.com/shrihan-vijay/codecartographer" },
         ],
       },
       {
@@ -246,6 +272,7 @@ const skills: SkillGroup[] = [
         usedIn: [
           { label: "HireReady", href: "https://github.com/shrihan-vijay/hire-ready" },
           { label: "Idea Nirvana" },
+          { label: "CodeCartographer", href: "https://github.com/shrihan-vijay/codecartographer" },
         ],
       },
       {
@@ -296,7 +323,7 @@ const skills: SkillGroup[] = [
       {
         name: "Terraform",
         icon: `${DI}/terraform/terraform-original.svg`,
-        usedIn: [{ label: "Idea Nirvana" }],
+        usedIn: [{ label: "GuidePoint Security" }],
       },
       {
         name: "JUnit",
@@ -315,15 +342,6 @@ const skills: SkillGroup[] = [
       {
         name: "WireGuard",
         icon: `${SI}/wireguard`,
-        usedIn: [{ label: "GuidePoint Security" }],
-      },
-      {
-        name: "Active Directory",
-        usedIn: [{ label: "GuidePoint Security" }],
-      },
-      {
-        name: "Windows Server",
-        icon: `${DI}/windows8/windows8-original.svg`,
         usedIn: [{ label: "GuidePoint Security" }],
       },
       {
@@ -413,8 +431,9 @@ function Hero() {
         <h1 className="text-5xl font-semibold tracking-tight text-slate-950 md:text-6xl">
           Shrihan Vijay
         </h1>
+        <p className="mt-2 text-sm font-medium text-slate-500">Graduating Dec 2027</p>
         <p className="mt-5 text-xl text-slate-700">
-          AI/ML Engineer · Software Engineer · Cybersecurity
+          Software Engineer · AI Engineer · Cybersecurity
         </p>
         <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
           I build intelligent, secure software at the intersection of AI, machine learning, and
@@ -466,12 +485,6 @@ function Hero() {
 }
 
 function About() {
-  const highlights = [
-    { value: "3", label: "Internships" },
-    { value: "3+", label: "Projects" },
-    { value: "Dec 2027", label: "Graduating" },
-  ];
-
   return (
     <Section id="about" title="About" eyebrow="Background">
       <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr]">
@@ -482,7 +495,7 @@ function About() {
         <div className="space-y-5 text-base leading-7 text-slate-600">
           <p>
             My work spans AI/ML engineering, full-stack development, and cybersecurity operations.
-            I enjoy turning ambiguous technical problems into reliable systems — whether that means
+            I enjoy turning ambiguous technical problems into reliable systems, whether that means
             building a multi-agent RAG pipeline, training a computer vision model, or hardening
             enterprise security infrastructure.
           </p>
@@ -492,14 +505,6 @@ function About() {
             keep building at the frontier of intelligent software.
           </p>
         </div>
-      </div>
-      <div className="mt-10 flex gap-10 border-t border-slate-200 pt-8">
-        {highlights.map((h) => (
-          <div key={h.label}>
-            <p className="text-3xl font-bold tracking-tight text-slate-950">{h.value}</p>
-            <p className="mt-1 text-sm text-slate-500">{h.label}</p>
-          </div>
-        ))}
       </div>
     </Section>
   );
