@@ -436,8 +436,8 @@ function Hero() {
           Software Engineer · AI Engineer · Cybersecurity
         </p>
         <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">
-          I build intelligent, secure software at the intersection of AI, machine learning, and
-          cybersecurity. Currently interning at Idea Nirvana and GuidePoint Security while
+          I build intelligent, secure software at the intersection of AI and cybersecurity.
+          Currently interning at Idea Nirvana and GuidePoint Security while
           pursuing my BS in Computer Science at UVA.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
