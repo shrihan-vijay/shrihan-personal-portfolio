@@ -54,8 +54,8 @@ const projects = [
     name: "HireReady",
     period: "Feb. 2026 – July 2026",
     description:
-      "Full-stack AI career copilot (React, FastAPI, Supabase) integrating Groq LLM and Whisper inference behind JWT-authenticated REST/SSE APIs to deliver resume scoring and voice-transcribed interview coaching. Architected three agentic patterns, a Groq tool-calling adaptive interviewer, a concurrent fan-out job ranker, and a sequential LangGraph pipeline, integrating GitHub's MCP server and cutting job-scoring latency up to 5x. Also engineered a RAG pipeline (MiniLM embeddings, ChromaDB vector search) to ground ATS scoring and skill-gap analysis in resume-specific context, plus a full application tracking system.",
-    tags: ["React", "TypeScript", "FastAPI", "Supabase", "LangGraph", "RAG", "ChromaDB", "Groq", "Whisper"],
+      "Full-stack AI career copilot (React, FastAPI, Supabase) integrating Groq LLM and Whisper inference behind JWT-authenticated REST/SSE APIs to deliver resume scoring and voice-transcribed interview coaching. Architected three agentic patterns, a Groq tool-calling adaptive interviewer, a concurrent fan-out job ranker, and a sequential LangGraph pipeline, integrating GitHub's MCP server and cutting job-scoring latency up to 5x. Also engineered a RAG pipeline (MiniLM embeddings, Supabase pgvector search) to ground ATS scoring and skill-gap analysis in resume-specific context, plus a full application tracking system.",
+    tags: ["React", "TypeScript", "FastAPI", "Supabase", "LangGraph", "RAG", "pgvector", "Groq", "Whisper"],
     github: "https://github.com/shrihan-vijay/hire-ready",
     demo: "https://hire-ready-sable-pi.vercel.app",
     demoGif: "/hireready-demo.gif",
