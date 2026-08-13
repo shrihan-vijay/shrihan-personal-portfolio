@@ -19,7 +19,9 @@ const experiences = [
     skills: ["React", "FastAPI", "PostgreSQL", "Microsoft SharePoint", "LangGraph", "RAG", "MCP", "Vector Search"],
     bullets: [
       "Architected an enterprise AI-powered Learning Management System (React, FastAPI, PostgreSQL, Microsoft SharePoint) with 5+ LangGraph agents and 10+ workflow states, leveraging RAG, MCP, and vector search for personalized tutoring and onboarding",
-      "Built multi-agent workflows that retrieve, reason over, and act upon 100+ enterprise documents via SharePoint MCP and PostgreSQL-backed context, producing grounded responses and adaptive assessments",
+      "Engineered RAG chunking and embedding pipelines with agent-to-agent handoff logic, grounding responses in 100+ enterprise documents via SharePoint MCP connectors to power role-based adaptive learning paths",
+      "Built scalable FastAPI backend services and REST APIs to orchestrate multi-agent workflows and PostgreSQL-backed learner state, cutting end-to-end API latency 30% through performance optimizations",
+      "Authored technical documentation and system diagrams for the multi-agent architecture, partnering with product and engineering stakeholders to translate feature requirements into implementation specs",
     ],
   },
   {
@@ -28,10 +30,11 @@ const experiences = [
     period: "May 2026 – Present",
     location: "Remote",
     logo: "/logo-guidepoint.png",
-    skills: ["Terraform", "Ansible", "Ludus", "WireGuard", "Kali Linux", "Splunk", "SOC Operations", "Network Monitoring"],
+    skills: ["Terraform", "Ansible", "Ludus", "WireGuard", "Kali Linux", "Splunk", "Nessus", "SOC Operations", "Network Monitoring"],
     bullets: [
-      "Deployed 5 enterprise security lab environments, provisioning infrastructure with Terraform and Ansible and simulating real-world attacks via Ludus, WireGuard, and Kali Linux",
-      "Administered SOC operations across a 10–25 endpoint environment, monitoring network traffic in Splunk, hardening systems, and running vulnerability assessments for threat detection and infrastructure management",
+      "Automated deployment of 5 enterprise SOC lab environments with Terraform and Ansible, cutting environment setup time 70% and improving deployment consistency",
+      "Configured and operated 10–25 endpoint environments across Windows and Linux systems with centralized Splunk telemetry for security monitoring and threat detection",
+      "Ran attack simulations (Ludus, WireGuard, Kali Linux) and Nessus vulnerability assessments to identify security gaps and validate system hardening",
     ],
   },
   {
@@ -42,7 +45,7 @@ const experiences = [
     logo: "/logo-treasury.png",
     skills: ["Python", "pandas", "SQL", "scikit-learn", "JavaScript", "REST APIs", "Machine Learning", "TF-IDF Vectorization"],
     bullets: [
-      "Developed Python (pandas) and SQL workflow automation systems that reduced multi-bureau approval turnaround time by 20%",
+      "Built a Python (pandas) workflow-routing script and optimized SQL queries to prioritize approval requests by urgency and analyst workload, cutting average request turnaround time 20% across multiple bureaus",
       "Improved document classification accuracy by 30% by training machine learning pipelines using scikit-learn, TF-IDF vectorization, and logistic regression models",
       "Built user-facing analytics dashboards and REST API integrations using JavaScript and SQL databases to support operational tracking tools for 40+ users",
     ],
@@ -358,6 +361,10 @@ const skills: SkillGroup[] = [
       },
       {
         name: "Ludus",
+        usedIn: [{ label: "GuidePoint Security" }],
+      },
+      {
+        name: "Nessus",
         usedIn: [{ label: "GuidePoint Security" }],
       },
     ],
